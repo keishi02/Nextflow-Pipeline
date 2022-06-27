@@ -3,7 +3,7 @@
 #SBATCH -A bharpur
 #SBATCH -n 1
 #SBATCH --ntasks=1
-#SBATCH -t 0-05:00:00
+#SBATCH -t 0-50:00:00
 
 #var1: how many rows of the genomic dataset to process OR "all" for all rows
 
