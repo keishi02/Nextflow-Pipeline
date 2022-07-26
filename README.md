@@ -10,7 +10,7 @@ alignment_1_link -> loads modules, downloads fastq, performs ngm alignment + sor
 alignment_2_links -> same as alignment_1_link but for rows with one link.
 
 
-##After final bam files have been made:
+## After final bam files have been made:
 
 
 post_bam.sh -> calls post_bam.py, which calls base_recalibration.sh and haplotype_caller.sh for every run accession
