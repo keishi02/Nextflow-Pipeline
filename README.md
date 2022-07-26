@@ -8,3 +8,10 @@ alignment.py -> reads dataset, splits into two (1 ftp link and 1 ftp links). For
 alignment_1_link -> loads modules, downloads fastq, performs ngm alignment + sorts and saves into bam file. Removes fastq file, then runs Add or Replace Groups and saves into new bam file before deleting old bam file. Marks duplicates and saves into new bam file before deleting previous bam file. You end up with one final bam file. <br />
 
 alignment_2_links -> same as alignment_1_link but for rows with one link.
+
+
+##After final bam files have been made:
+
+
+post_bam.sh -> calls post_bam.py, which calls base_recalibration.sh and haplotype_caller.sh for every run accession
+After running combine_gvcf.sh, variant_recalibration.sh, and finally variant_filtration.sh, you'll end up with AMELknown_sites.vcf
